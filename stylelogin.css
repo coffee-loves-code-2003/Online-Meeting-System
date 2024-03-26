@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.login_page {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Send_Email
+{
+    justify-content: center;
+    margin-left:60px;
+}
+.login_page2 {
+    
+    margin: 0 auto; /* Change padding to margin */
+    padding: 20px; /* You can adjust the padding as needed */
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to top right, rgba(247, 6, 243, 0.438), rgba(215, 14, 14, 0.961));
+}
+
+.Image {
+    width: 50%;
+}
+#im
+{
+    margin-top:50px;
+    width:300px;
+}
+
+.Auth {
+    margin-top: 125px;
+    justify-content: center;
+    align-items: center;
+    padding-left:30px;
+}
+
+#user,
+#link {
+    border: 2px solid rgba(8, 204, 234, 0.865); /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add some padding */
+    font-size: 16px; /* Adjust the font size */
+    width: 100%; /* Make them fill their container width */
+    margin-top: 20px;
+}
+
+/* Add a box shadow on focus for a nice highlight effect */
+#user:focus,
+#link:focus {
+    box-shadow: 0 0 5px rgba(8, 204, 234, 0.865);
+}
+.button {
+    margin-top:50px;
+    display: flex; /* Add this */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.Join {
+    color: rgba(13, 14, 14, 0.865);
+    padding: 8px 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(8, 204, 234, 0.865);
+    cursor: pointer;
+}
+.Join:hover
+{
+    background-color: rgb(60, 13, 201);
+    transition: background-color 2s;
+
+}
+.Send_Email2 {
+    color: rgba(13, 14, 14, 0.865);
+    padding: 8px 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(234, 8, 8, 0.865);
+    cursor: pointer;
+}
+.Send_Email2:hover
+{
+    background-color: rgb(48, 201, 13);
+    transition: background-color 2s;
+
+}

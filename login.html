@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="stylelogin.css"/>
+</head>
+<body>
+    <div class="login_page">
+        <div class="login_page2">
+            <div class="Image">
+                <img src="logo.png" id="im">
+            </div>
+            <div class="Auth">
+                <div class="Send_Email">
+                    <button class="Send_Email2" id="SendButton"><a href="email.html"style="text-decoration:none;">Send Email</a></button>
+
+                </div>
+                <input type="text" id="link" placeholder="Enter the link">
+                <div class="button">
+                    <button class="Join" id="joinButton">JOIN</button>
+ 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+document.getElementById('joinButton').addEventListener('click', function() {
+    var inputLink = document.getElementById('link').value;
+
+    if (!inputLink.startsWith('http://') && !inputLink.startsWith('https://')) {
+        inputLink = 'https://' + inputLink;
+    }
+
+    window.location.href = inputLink;
+});
+
+    </script>
+</body>
+</html>
